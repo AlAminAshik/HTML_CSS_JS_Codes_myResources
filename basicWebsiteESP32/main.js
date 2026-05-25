@@ -12,4 +12,4 @@ async function fetchSwitchStatus() {
     }
 }
 
-setInterval(fetchSwitchStatus, 500); // Fetch status every 500 milliseconds
+setInterval(fetchSwitchStatus, 100); // Fetch status every 500 milliseconds

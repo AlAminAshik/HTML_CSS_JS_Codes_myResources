@@ -1,8 +1,18 @@
-button {
-    background-color: blue;
+
+.addButton {
+    background-color: green;
     color: white;
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    }
+}
+
+.multButton {
+    background-color: orange;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

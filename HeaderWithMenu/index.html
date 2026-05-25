@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample HTML Calculator</title>
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Header</title>
+  <link rel="stylesheet" href="main.css" />
 </head>
+
 <body>
-    <h1>Welcome to the Sample Calculator</h1>
-    <p>Press the button to add numbers.</p>
+  <header>
+    <a class="logo" href="https://alaminn.com">Mylogo</a>
 
-    <input type = "number" id = "num1" placeholder = "Enter first number">
-    <input type = "number" id = "num2" placeholder = "Enter second number">
-    <button onclick="Addnumbers()" >Add Numbers</button>
-    
-    <h2>Result will be displayed here</h2>
-    <input type="text" id="result" readonly>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
 
-    <script src="main.js"></script> 
+    <button class="header-btn">Sign up</button>
+    <button class="hamburger" id="toggle">☰</button>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#" class="active">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <script src="main.js"></script>
+
 </body>
 </html>
