@@ -25,7 +25,7 @@ void handleStatus() {
   //other types of content are, image/png, application/json(structured data)
   // return plain text: "pressed" or "not pressed"
   if (state == LOW) {
-    server.send(200, "text/plain", "pressed");
+    server.send(200, "text/plain", "pressed"); // 200 is the status code for success, text/plain is the content type, "pressed" is the response body.
     Serial.println("pressed");
   } else {
     server.send(200, "text/plain", "not pressed");

@@ -1,3 +1,55 @@
+body {
+    font-family: 'Times New Roman', serif;
+    text-align: center;
+		display: flex;
+		flex-direction: row;
+}
+
+/* navbar */
+
+.navbar {
+	display: grid;
+	grid-column:span 1;
+	max-width: 350px;
+	height: 100vh;
+
+  background-color: #e5fcff;
+  color: white;
+  border-right: solid 1px #000; /* Add a border to the navbar */
+  z-index: 999;
+}
+
+.navbar_container {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.navbar_container ul {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	list-style-type: none;
+}
+
+#navbar_logo {
+	align-items: center;
+	text-decoration: none;
+	max-width: 5px;
+	max-height: 5px;
+}
+
+#navbar_logo::before {
+	content: url(Images/logo.png);
+	background-color: #000; /* Change this to your desired color */
+	border-radius: 50%;
+}
+
+
+
 #statusBox {
     font-size: 24px;
     padding: 10px;
@@ -5,9 +57,4 @@
     text-align: center;
     border-radius: 5px;
     font: 'Times New Roman', serif;
-}
-body {
-    font-family: 'Times New Roman', serif;
-    text-align: center;
-    margin-top: 100px;
 }
