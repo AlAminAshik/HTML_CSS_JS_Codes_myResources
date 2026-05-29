@@ -1,0 +1,143 @@
+.container{                 /* div class is addressed using . */
+    min-height: 100px;      /* forced container to be at least 100px tall */
+    display: flex;          /* This makes the container a flex(rubbery) container */
+    border: 1px solid black;    /* all side border of the container is 1px solid black */
+    justify-content: center;  /* Aligns items to the center of the container(horizontally or column wise) */
+    align-items: center;     /* This centers the items vertically or row wise */
+    gap:10px; /* This adds a gap of 10px between the items */
+}
+.box{               /* div class is addressed using .box declareed globally*/
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
+    font-size: 10pt;
+}
+
+.container2{
+    min-height: 100px;
+    display: flex;          /* This makes the container a flex(rubbery) container */
+    border: 1px solid black;    /* all side border of the container is 1px solid black */
+    justify-content: space-evenly;  /* Aligns items with space between them horizontally */
+    align-items: center;     /* This centers the items vertically */
+}
+.container2 .box2{               /* box2 is addressed from container2 */
+    height: 50px;
+    width: 50px;
+    background-color: rgb(249, 239, 195);
+    font-size: 10pt;
+}
+
+.large_container{
+    display: flex;      /*this acts a large container and contains container 3 and container 4 */
+    justify-content: space-between; /*uses the full page horizontally and puts container 3 and container 4 at the extreme ends of the page */
+}
+
+.container3{
+    display: flex;        /* This makes the container a flex container */
+    border: 1px solid black;
+    max-height: 200px;
+    min-width: 150px;
+    flex-direction: column;  /* This changes the direction of the flex items to column (vertically) */
+    align-items: flex-end;     /* This aligns the items to the start of the container (right side) */
+    justify-content: center;  /* This centers the items vertically (row wise)*/
+    gap: 10px; /* This adds a gap of 10px between the items */
+}
+.container3 .box2{               /* box2 is addressed from container3 */
+    height: 50px;
+    width: 130px;
+    background-color: rgb(249, 195, 195);
+    font-size: 10pt;
+}
+
+.container4{
+    display: flex;        /* This makes the container a flex container */
+    flex-wrap: wrap;     /* This allows the items to wrap to the next line if they exceed the container's width */
+    justify-content: space-between;  /* Aligns items with space between them */
+    border: 1px solid black;
+    max-height: 200px;
+    min-width: 70vw;  /* This sets the minimum width of the container to 70% of the viewport width */
+    flex-direction: row;  /* This changes the direction of the flex items to row */
+    align-items: center;     /* This aligns the items to the center of the container individually */
+    align-content: center;  /* This centers the items as a group within the container */
+    gap: 10px; /* This adds a gap of 10px between the items */
+}
+.container4 .box2{               /* box2 is addressed from container4 */
+    height: 50px;
+    width: 100px;
+    background-color: rgb(195, 249, 195);
+    font-size: 10pt;
+    display: flex; /* This makes the box2 a flex container */
+    justify-content: center; /* This centers the content horizontally within the box2 */
+    align-items: center; /* This centers the content vertically within the box2 */
+}
+
+.container5{
+    display: flex;
+    border: 1px solid black;
+    max-height: 200px;
+    margin-top: 10px;
+    align-items: center;     /* This aligns the items to the center of the container individually */
+    justify-content: space-around;  /* This centers the items as a group within the container */
+    gap: 10px; /* This adds a gap of 10px between the items */  
+}
+.container5 .box2{  /*all the boxes in container 5 are addressed using class selector */
+    height: 50px;
+    width: 200px;
+    background-color: rgb(195, 195, 249);
+}
+#unique_box{ /* first box in container 5 is addressed using id selector */
+    height: 50px;
+    min-width: 200px;
+    background-color: rgb(195, 249, 249);
+    flex-grow: 1; /* This allows the box to grow and take up the remaining space in the container */
+}
+
+.container6{
+    display:flex;
+    border: 1px solid black;
+    min-height: 200px;
+    margin-top: 10px;
+    align-items: flex-start;     /* This aligns the items to the center of the container individually */
+    justify-content: space-around;  /* This centers the items as a group within the container */
+}
+.container6 .box2{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(195, 249, 195);
+    font-size: 10pt;
+}
+#unique_box2{   /* first box in container 6 is addressed using class selector */
+    align-self: center; /* This overrides the align-items property for this specific item and centers it vertically within the container */
+}
+
+.container7{
+    display: flex;
+    border: 1px solid black;
+    max-height: 200px;
+    margin-top: 10px;
+    align-items: center;     /* This aligns the items to the center of the container individually */
+    justify-content: space-around;  /* This centers the items as a group within the container */
+}
+.container7 nav{
+    border: 1px solid black;
+    min-width: 70vw;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.container7 nav .list{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background-color: rgb(227, 227, 227);
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+#logo{
+    font-size: 20px;
+}
+@media(max-width: 800px){
+    .container7 nav{
+        display: none;
+    }
+}
